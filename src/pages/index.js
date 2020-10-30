@@ -15,7 +15,7 @@ export default function Home() {
   const [cart, setCart] = useState([]);
   // setCart([...cart, product]);
   const [orders, setOrders] = useState([]);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const [cartItem, setCartItem] = useState([]);
   const [activeOrder, setActiveOrder] = useState(null);
   const [beginOrder, setBeginOrder] = useState(null);
@@ -57,9 +57,9 @@ export default function Home() {
           setOrders,
           cartItem,
           setCartItem,
-          activeOrder, 
+          activeOrder,
           setActiveOrder,
-          beginOrder, 
+          beginOrder,
           setBeginOrder,
         }}
       >

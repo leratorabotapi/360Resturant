@@ -1,5 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Icon from './';
+import Icon from '.';
 
 <Meta title="360 Menu/Icon" component={Icon} />
 

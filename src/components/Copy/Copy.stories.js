@@ -1,5 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Copy from './'
+import Copy from '.'
 
 <Meta title="360 Menu/Copy" component={Copy} />
 

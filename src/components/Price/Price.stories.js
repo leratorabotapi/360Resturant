@@ -1,5 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Price from './'
+import Price from '.'
 
 <Meta title="360 Menu/Price" component={Price} />
 

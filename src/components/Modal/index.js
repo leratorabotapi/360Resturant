@@ -11,6 +11,7 @@ import Price from '../Price';
 import LikeCount from '../LikeCount';
 import Icon from '../Icon';
 import boopSfx from '../sounds/addtocart.mp3';
+import boopSfx2 from '../sounds/close.mp3';
 
 const Modal = ({}) => {
   const {
@@ -23,14 +24,27 @@ const Modal = ({}) => {
   } = useContext(ApplicationContext);
 
   const [play] = useSound(boopSfx);
+  const [play2] = useSound(boopSfx2);
 
   const handleClick = () => {
+    // debugger;
     // set cart item, intent: send to list
-    setCartItem(cartItem => cartItem.concat(activeProduct));
+    setCartItem((cartItem) => cartItem.concat({...activeProduct, query}));
+
+    // const [cart, setCart] = useState(initialState)
+    // setCart("bla")
+    const oldOrders = [{order:1}, {order:2}];
+    const singleNewOrder = {order: 3}
+    const newOrders = [...oldOrders]
+    newOrders.push(singleNewOrder)
+
+    // const newOrders = [...oldOrders, singleNewOrder] 
+    setOrders(newOrders)
+
     // Add the special instruction to the list onClick of Add To Cart button
     // Save the string state to React Hooks
     // setOrders(orders => [...orders, query])
-    setOrders(orders => orders.concat(query));
+    // setOrders((orders) => orders.concat(query));
     // close modal
     setActiveProduct(null);
     // play sound
@@ -49,10 +63,10 @@ const Modal = ({}) => {
     }
   };
 
-  const submitHandler = e => {
+  const submitHandler = (e) => {
     // Prevent form submission on Enter key
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   return (
     <motion.div
@@ -69,7 +83,7 @@ const Modal = ({}) => {
             size="medium"
             onClick={() => {
               setActiveProduct(null);
-              play();
+              play2();
             }}
           >
             <Icon name="Cross" />
@@ -123,7 +137,7 @@ const Modal = ({}) => {
           <Copy size="medium" color="white">
             SPECIAL INSTRUCTIONS
           </Copy>
-          <form  onSubmit={submitHandler}>
+          <form onSubmit={submitHandler}>
             <div>
               <input
                 className="labelInput"

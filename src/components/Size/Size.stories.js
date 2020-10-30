@@ -1,5 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Size from './'
+import Size from '.'
 
 <Meta title="360 Menu/Size" component={Size} />
 

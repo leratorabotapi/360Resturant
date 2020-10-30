@@ -1,4 +1,4 @@
-context('Counter App', () => {
+context('360 App', () => {
   before(() => {
     cy.visit('http://localhost:8000');
   });
@@ -19,5 +19,8 @@ context('Counter App', () => {
   it('Should Add Custom Notes to Order', () => {
     cy.get('[type="text"]').type('Salad Dressing on the side');
     cy.get('[class="Modal"]').children('[type="button"]').click();
+    cy.get('.descriptionSection > .Copy-medium').contains('Salad Dressing on the side')
   });
+
+
 });

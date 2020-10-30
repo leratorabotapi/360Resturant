@@ -17,9 +17,9 @@ const Label = ({ label, size, color, text }) => {
       labelColor = '#E54A2D';
       break;
 
-      case 'gray':
-        labelColor = '#4F4F4F';
-        break;
+    case 'gray':
+      labelColor = '#4F4F4F';
+      break;
 
     default:
       break;

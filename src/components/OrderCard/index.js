@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import useSound from 'use-sound';
 import ApplicationContext from '../ApplicationContext/Application';
 import Icon from '../Icon';
 import Copy from '../Copy';
@@ -9,7 +10,6 @@ import Price from '../Price';
 import Size from '../Size';
 import { Button } from '../Button';
 import boopSfx from '../sounds/delete.mp3';
-import useSound from 'use-sound';
 
 const OrderCard = ({
   variant,
@@ -25,7 +25,7 @@ const OrderCard = ({
   icon,
   iconColors,
 }) => {
-  const { cartItem, setCartItem} = useContext(ApplicationContext);
+  const { cartItem, setCartItem } = useContext(ApplicationContext);
 
   const [play] = useSound(boopSfx);
 
@@ -44,10 +44,10 @@ const OrderCard = ({
   }
 
   const DeleteItem = (e) => {
-    const id = e.target.getAttribute("id")
-     setCartItem(cartItem.filter(item => item.id !== id));
-     play();
-   };
+    const id = e.target.getAttribute('name');
+    setCartItem(cartItem.filter((item) => item.name !== name));
+    play();
+  };
 
   return (
     <li className={`ordercard-${variant}`} style={color && { color }}>
@@ -82,7 +82,7 @@ const OrderCard = ({
 
       <div>
         <div className="descriptionSection">
-          <Icon name="Pencil" size="regular" />
+          <Icon name="Pencil" size="meduim" />
           <Copy color="grey" size="medium">
             {query}
           </Copy>

@@ -42,6 +42,7 @@ const OrdersPane = ({ variant }) => {
                     amount={activeOrder.unitCost}
                     text={activeOrder.name}
                     productSize={activeOrder.size}
+                    query={activeOrder.query}
                   />
                 ))}
               </ul>
@@ -67,6 +68,7 @@ const OrdersPane = ({ variant }) => {
                     text={cartItem.name}
                     description={cartItem.description}
                     productSize={cartItem.size}
+                    query={cartItem.query}
                   />
                 ))}
               </ul>
