@@ -1,0 +1,12 @@
+.Size-light {
+    font-size: 14px;
+    font-weight: regular;
+    font-family: 'Work Sans', sans-serif;
+    color: #BDBDBD;
+}
+.Size-dark {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: regular;
+    color: #4F4F4F;
+}

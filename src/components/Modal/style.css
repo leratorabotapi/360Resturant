@@ -1,0 +1,76 @@
+.Modal {
+ height: 100vh;
+ background-color: #222222;
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.imageBox {
+  display: flex;
+  flex-direction: row;
+}
+.labelInput {
+  background-color: #222222;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  min-width: 370px;
+  color: #BDBDBD;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #222222;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid rgba(51, 51, 51, 1);
+  margin: 0 15px 0 0 ;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 1px solid #E54A2D;
+  background-color: #E54A2D;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+}
+
+.activeOrderCard {
+  margin: 40px;
+}
+
+.addCart{
+  margin: 100px;
+}
+.descriptionBox{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.imageCont {
+  height: 276px;
+  min-width: 409px;
+  border-radius: 0px 0px 0px 50px;
+  overflow: hidden;
+}
+
+.activeProductImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

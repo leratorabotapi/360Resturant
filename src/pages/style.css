@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap');
+
+
+body {
+    margin: 0;
+}
+
+.App {
+    background-color: white;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.3fr 3.1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". . ."; 
+    height: 100vh;
+}
+
+.section1 {
+    min-width: 90px;
+    height: 100vh;
+}
+
+.section2 {
+    margin: 41px 40px 0;
+    min-width: 654px;
+}
+
+.section3 {
+    min-width: 450px;
+    background-color: #222222;
+    height: 100vh;
+}
