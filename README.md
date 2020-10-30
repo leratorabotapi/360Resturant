@@ -1,35 +1,31 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  360 Resturant App
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+In time of social distancing our Restaurant “360” is in need of a digital menu which is provided to customer as a permanently installed tablet. The tablet runs a web application, which will be the central interface where the customer can order food and drinks from the menu and call the waiter, if necessary.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+The 360 Restaurant menu app is fun and utilitaruian, making use of ux knowledge and intuitive design to deliver an ordering experience.
+
+The 360 Restaurant menu app looks to make the process fully digital. The process of mkaing an order is fullt digital from finding an item, ordering that item and tracking the status of your order.
+
+
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **install all the modules and dependencies.**
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+  Navigate into app site’s directory and start it up.
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    Simply get started by installing the package with dependencies:
+
+    ```gatsby develop
     ```
 
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into app site’s directory and start it up.
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
+    ```npm start
     ```
 
 1.  **Open the source code and start editing!**
@@ -40,55 +36,59 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🧐 What's inside?
+## 🧐 Running Storybook?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Navigate into app site’s directory and Run this inside the root directory:
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+ ```
+npx sb init
+ ```
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Check that everything worked by running:
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+```
+npm run storybook
+```
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+## 🧐 What's inside you ask?
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+All the depenecies installed include:
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+1.  **`Storybook`**: Storybook is a tool for UI development. It makes development faster and easier by isolating components. This allows you to work on one component at a time. You can develop entire UIs without needing to start up a complex dev stack, force certain data into your database, or navigate around your application.
+[Storybook API](https://storybook.js.org/docs/react/get-started/introduction)
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+2.  **`cypress`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+to get started, install Cypress in your project directory:
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+```
+npm install cypress
+```
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+Visit the [cypress API](https://docs.cypress.io/api/api/table-of-contents.html) for more infomation
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+3.  **`ESLint`**: A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease. Go [ESLint](https://eslint.org/docs/user-guide/getting-started) for details on this plugin
 
-## 🎓 Learning Gatsby
+4.  **`use-sound`**: A React Hook for Sound Effects. This is installed easily. Here's a typical example.[use-sound](https://joshwcomeau.com/react/announcing-use-sound-react-hook/)
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+```
+import useSound from 'use-sound';
+import boopSfx from '../../sounds/boop.mp3';
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+const BoopButton = () => {
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+  const [play] = useSound(boopSfx);
+
+  return <button onClick={play}>Boop!</button>;
+};
+```
+
+5.  **`Framer-Motion`**: Motion is an open source, production-ready library that's designed for all creative developers. [View Framer motion on Github](https://github.com/framer/motion)
+
+6.  **`Gatsby-js`**: Gatsby is a React-based open source framework for creating websites and apps. Looking to get started with this fancy tool? [Got to Gatsby JS](https://www.gatsbyjs.com/docs/)
+
 
 ## 💫 Deploy
 
