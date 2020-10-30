@@ -1,0 +1,12 @@
+.Navbar {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #222222;
+}
+
+.logo {
+  padding: 37px 0 37px 0;
+}

@@ -1,0 +1,20 @@
+.Price-small {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: #222222;
+}
+
+.Price-medium {
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.Price-large {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}

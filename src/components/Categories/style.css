@@ -1,0 +1,20 @@
+.categories-default {
+  background-color: #222222;
+  padding: 25px 0 25px;
+  width: 100%;
+  border: 0px;
+}
+
+.categories-red {
+  background-color: #E54A2D;
+  padding: 25px 0 25px;
+  width: 100%;
+  border: 0px;
+}
+
+.categories-clicked {
+  background-color: white;
+  padding: 25px 0 25px;
+  width: 100%;
+  border: 0px;
+}

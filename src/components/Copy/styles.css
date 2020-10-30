@@ -1,0 +1,14 @@
+.Copy-small {
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 14.4px;
+    font-weight: 400;
+}
+.Copy-medium {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+}
+.Copy-large {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}

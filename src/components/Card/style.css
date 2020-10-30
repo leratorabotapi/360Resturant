@@ -1,0 +1,50 @@
+.card-default {
+  min-height: 160px;
+  width: 277px;
+  border-radius: 6px;
+  -moz-box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.05);
+  margin: 0 20px 20px 0;
+  display: grid;
+  grid-template-columns: 99px 178px;
+  border: 1px solid #F2F2F2;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageSection {
+  width: 99px;
+  height: 160px;
+}
+
+.productImage {
+  width: 99px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.description {
+  height: 56px;
+  overflow: hidden;
+  padding: 0 12px 0 0;
+}
+
+.productTitle {
+  padding: 0 12px 0 0; 
+}
+
+.infoSection {
+  margin: 12px 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottomSection {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}

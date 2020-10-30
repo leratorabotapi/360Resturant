@@ -1,0 +1,17 @@
+export { default as Copy } from './Copy';
+export { default as Dessert } from './Dessert';
+export { default as Drink } from './Drink';
+export { default as HeartFilled } from './HeartFilled';
+export { default as Panini } from './Panini';
+export { default as Pasta } from './Pasta';
+export { default as PencilCreate } from './PencilCreate';
+export { default as Pizza } from './Pizza';
+export { default as Plus } from './Plus';
+export { default as Salad } from './Salad';
+export { default as Starter } from './Starter';
+export { default as Trash } from './Trash';
+export { default as Waiter } from './Waiter';
+export { default as Logo } from './Logo';
+export { default as Cross } from './Cross';
+export { default as Heart } from './Heart';
+export { default as Time } from './Time';
